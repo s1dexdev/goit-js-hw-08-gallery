@@ -87,7 +87,7 @@ function switchImage(key) {
   // Next image
   if (key === 'ArrowRight') {
     if (currentNumberImage > images.length - 2) {
-      return;
+      currentNumberImage = 0;
     } else {
       currentNumberImage += 1;
     }
@@ -96,7 +96,7 @@ function switchImage(key) {
     // Previous image
   } else if (key === 'ArrowLeft') {
     if (currentNumberImage < 1) {
-      return;
+      currentNumberImage = 8;
     } else {
       currentNumberImage -= 1;
     }
